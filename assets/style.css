@@ -19,16 +19,22 @@ body {
   background-color: var(--dark);
 }
 
+.photo {
+  display: flex;
+  justify-content: center;
+}
+
 .nav-bar li {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: inline;
+  margin: 10px;
+  padding: 10px;
+  display: inline-flex;
+  float: left;
 }
 
 .main-sections {
   margin: 10px;
-  border: 2px solid var(--light);
+  margin-right: 50px;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -37,12 +43,18 @@ body {
 .section-title {
   width: 30%;
   text-align: right;
-  border-right: 5px solid red;
+  border-right: 5px solid var(--light);
   margin-right: 25px;
   padding-inline-end: 25px;
+  justify-content: flex-end;
 }
 
 .section-content {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+
+  float: left;
   width: 70%;
   text-align: center;
 }
@@ -50,4 +62,51 @@ body {
 .title {
   display: flex;
   justify-content: right;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
