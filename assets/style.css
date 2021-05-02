@@ -1,0 +1,53 @@
+:root {
+  --dark: #141618;
+  --bright: #00ffd0;
+  --light: #c1e9d1;
+  --neon: #f700ff;
+}
+
+::selection {
+  background-color: var(--bright);
+  color: var(--dark);
+}
+
+body {
+  /* Sans Serif font stack is implemented */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+.nav-bar li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.main-sections {
+  margin: 10px;
+  border: 2px solid var(--light);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.section-title {
+  width: 30%;
+  text-align: right;
+  border-right: 5px solid red;
+  margin-right: 25px;
+  padding-inline-end: 25px;
+}
+
+.section-content {
+  width: 70%;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  justify-content: right;
+}

@@ -1,23 +1,52 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <link rel="reset" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-    <title>Jiggle Into JavaScript</title>
-    
-</head>
-<body>
+  <body>
+    <header>
+      <h1 class="main-title" id="titles">Andres Molestina's Portfolio</h1>
+    </header>
 
+    <img src="/assets/images/face1.jpg" alt="andresito" />
 
+    <section class="nav-bar">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </section>
 
-    <p>Press the buttons to change the box!</p>
+    <nav></nav>
 
-    <div id="box" style="height:150px; width:150px; background-color:orange; margin:25px"></div>
+    <div id="main-body">
+      <section class="main-sections">
+        <h3 id="about" class="section-title">About me</h3>
+        <p class="section-content">
+          Those who seek pain have not know pain in their lives.
+        </p>
+      </section>
 
-    <button id="grow">grow</button>
-    <button id="blue">blue</button>
-    <button id="fade">fade</button>
-    <button id="reset">reset</button>
+      <section class="main-sections">
+        <h3 id="projects" class="section-title">Projects</h3>
+        <ul class="section-content">
+          <li>Those who seek pain have not know pain in their lives.</li>
+        </ul>
+      </section>
 
-    <script type="text/javascript" src="./javascript.js"></script>
-</body>
+      <section class="main-sections">
+        <h3 id="contact" class="section-title">Contact me</h3>
+        <p class="section-content">
+          Those who seek pain have not know pain in their lives.
+        </p>
+      </section>
+    </div>
+  </body>
 </html>
