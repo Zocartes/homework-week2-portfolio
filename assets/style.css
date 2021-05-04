@@ -76,6 +76,8 @@ div.gallery:hover {
   width: 100%;
   height: auto;
   resize: vertical;
+  height: 600px;
+  overflow: hidden;
 }
 
 .gallery img {
